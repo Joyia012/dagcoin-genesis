@@ -1,17 +1,16 @@
 /*jslint node: true */
 "use strict";
 
-exports.COUNT_WITNESSES = 12;
+exports.COUNT_WITNESSES = 4;
 exports.MAX_WITNESS_LIST_MUTATIONS = 1;
-exports.TOTAL_WHITEBYTES = 1e15;
+exports.TOTAL_WHITEBYTES = 1e12;
 exports.MAJORITY_OF_WITNESSES = (exports.COUNT_WITNESSES%2===0) ? (exports.COUNT_WITNESSES/2+1) : Math.ceil(exports.COUNT_WITNESSES/2);
 exports.COUNT_MC_BALLS_FOR_PAID_WITNESSING = 100;
 
-exports.version = '1.0';
+exports.version = '1.0t';
 exports.alt = '1';
 
-exports.GENESIS_UNIT = 'lyPpvkoHAE+OZ2xpRasRtZRJynPBf7UiltRNpVoNXsI=';
-exports.BLACKBYTES_ASSET = 'F7MfEdMrDRPoWDBSdiCq3JSeeTw2gkyvKaYpkn19lEI=';
+exports.GENESIS_UNIT = 'NvDKs1DVhmqIZAkcUZDInvh7GjTlj8lOV/IjH71c1RE=';
 
 exports.HASH_LENGTH = 44;
 exports.PUBKEY_LENGTH = 44;
@@ -30,7 +29,7 @@ exports.MAX_ATTESTORS_PER_ASSET = 64;
 exports.MAX_DATA_FEED_NAME_LENGTH = 64;
 exports.MAX_DATA_FEED_VALUE_LENGTH = 64;
 exports.MAX_AUTHENTIFIER_LENGTH = 4096;
-exports.MAX_CAP = 9e15;
+exports.MAX_CAP = 1e12;
 exports.MAX_COMPLEXITY = 100;
 
 exports.MAX_PROFILE_FIELD_LENGTH = 50;

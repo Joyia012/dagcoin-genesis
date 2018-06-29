@@ -1,17 +1,17 @@
 /*jslint node: true */
 "use strict";
 
-exports.clientName = 'byteball';
-exports.minClientVersion = '2.1.0';
+//exports.clientName = 'byteball';
+//exports.minClientVersion = '2.1.0';
 
 // https://console.developers.google.com
-exports.pushApiProjectNumber = 0;
-exports.pushApiKey = '';
+//exports.pushApiProjectNumber = 0;
+//exports.pushApiKey = '';
 
-exports.port = 6611;
+exports.port = 80;
 //exports.myUrl = 'wss://mydomain.com/bb';
 exports.bServeAsHub = true;
-exports.bSaveJointJson = true;
+//exports.bSaveJointJson = true;
 exports.bLight = false;
 
 // this is used by wallet vendor only, to redirect bug reports to developers' email
@@ -23,20 +23,13 @@ exports.HEARTBEAT_TIMEOUT = 300*1000;
 exports.storage = 'sqlite';
 
 
-exports.initial_witnesses = [
-    '4POPAXQLACF6UOPBJMB4LZ5IKZPAC2BE',
-    'DCB5B2PI4SVLTMMTOC2XWGQ4GUEENWKI',
-    'DE4ABLNVUM4KQVT6RQHA7OP5GQFXVZBH',
-    'EO557VKFOJERPHI45SJIN2K5LRIZMOO6',
-    'EVXOERRAWLRBQSHFNWU4AFGHEBVEJRR5',
-    'HWDZNEIOFJVCANY7G7EZ7O5EFWEUQQQD',
-    'JXYEK66S3NJJ7I6SOBQ575J344ONCEXF',
-    'OBXJOOOXPS2Z3VFOTG7CT67MHDHNDTMY',
-    'REWI6I5TDFL5CP7OF5YZMMXJMGS3ALYE',
-    'SPN477MRYL2PHMHZSJ7PTQB5N32GEN75',
-    'V2SCV67S3NQQ3A2E2WGZPSKSF4CSYB22',
-    'Y2STVV5JUS4RG5RRDOG3YJLVR7OWMR3L'
-];
+exports.initial_witnesses = [ '7WCFYM6GXDABMKSVY534FISSGKDZBXZX',
+  '7WMQK6ITRXH2Y4EO4TT3Y3IIL56URLCL',
+  'TKNE2A6BWAXNGFZWEHGKWCAQWLC6PZOJ',
+  'YFYIRO5HZ6LABJYVUU6U4S2DUSBSRTHR' ];
+
+
+
 
 /* new testnet
 exports.initial_witnesses = [
@@ -55,8 +48,8 @@ exports.initial_witnesses = [
 ];
 */
 
-exports.initial_peers = [
-];
+//exports.initial_peers = [
+//];
 
 /*
 exports.trustedRegistries = {

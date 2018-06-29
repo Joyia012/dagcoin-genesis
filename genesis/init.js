@@ -5,8 +5,8 @@ let fs = require('fs');
 let crypto = require('crypto');
 let Mnemonic = require('bitcore-mnemonic');
 let Bitcore = require('bitcore-lib');
-let objectHash = require('byteballcore/object_hash');
-let constants = require('byteballcore/constants');
+let objectHash = require('core/object_hash');
+let constants = require('core/constants');
 
 
 // create 4 types of config files in configPath

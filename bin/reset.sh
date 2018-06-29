@@ -21,7 +21,7 @@ rm "$APPDIR"/wallet-genesis/byteball*
 rm "$APPDIR"/wallet-paying/byteball*
 rm "$APPDIR"/wallet-payee/byteball*
 
-for i in {1..12}
+for i in {1..4}
 do
     rm "$APPDIR"/wallet-witness$i/byteball*
 done

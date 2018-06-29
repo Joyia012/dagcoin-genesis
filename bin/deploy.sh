@@ -24,34 +24,34 @@ echo "copy wallet to appdir"
 cp -a ../wallets/wallet* "$APPDIR"
 
 echo "update config file"
-cp -f ../config/hub-conf.js ../src/byteball-hub/conf.js
-cp -f ../config/witness-conf.js ../src/byteball-witness/conf.js
-cp -f ../config/explorer-conf.js ../src/byteball-explorer/conf.js
+cp -f ../config/hub-conf.js ../src/hub/conf.js
+cp -f ../config/witness-conf.js ../src/witness/conf.js
+cp -f ../config/explorer-conf.js ../src/explorer/conf.js
 
 echo "update start script"
-cp -f ../config/witness-headless-start.js ../src/byteball-witness/node_modules/headless-byteball/start.js
-cp -f ../config/witness-start.js ../src/byteball-witness/start.js
+cp -f ../config/witness-headless-start.js ../src/witness/node_modules/headless-wallet/start.js
+cp -f ../config/witness-start.js ../src/witness/start.js
 
 echo "update constants"
-cp -f ../config/constants.js ../src/byteball-witness/node_modules/byteballcore/constants.js
-cp -f ../config/constants.js ../src/byteball-hub/node_modules/byteballcore/constants.js
-cp -f ../config/constants.js ../src/byteball-explorer/node_modules/byteballcore/constants.js
+cp -f ../config/constants.js ../src/witness/node_modules/core/constants.js
+cp -f ../config/constants.js ../src/hub/node_modules/core/constants.js
+cp -f ../config/constants.js ../src/explorer/node_modules/core/constants.js
 
-cp -f ../config/constants.js ../genesis/node_modules/byteballcore/constants.js
+cp -f ../config/constants.js ../genesis/node_modules/core/constants.js
 
-for i in {1..12}
+for i in {1..4}
 do
     echo "deploy witness$i"
-    cp -a ../src/byteball-witness/ ../nodes/witness$i
+    cp -a ../src/witness/ ../nodes/witness$i
     if [ $SYSTEM = "Darwin" ] ; then
-        sed -i "" "s/byteball-witness/wallet-witness$i/g" ../nodes/witness$i/package.json  
+        sed -i "" "s/witness/wallet-witness$i/g" ../nodes/witness$i/package.json  
     else
-        sed -i "s/byteball-witness/wallet-witness$i/g" ../nodes/witness$i/package.json  
+        sed -i "s/witness/wallet-witness$i/g" ../nodes/witness$i/package.json  
     fi
 done
 
-cp -a ../src/byteball-explorer/ ../nodes/explorer
-cp -a ../src/byteball-hub/ ../nodes/hub
+cp -a ../src/explorer/ ../nodes/explorer
+cp -a ../src/hub/ ../nodes/hub
 
 echo deploy finshed
 
