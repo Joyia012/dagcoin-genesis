@@ -94,14 +94,6 @@ DAGCOin-genesis：
 
 运行成功后，可以在`http://127.0.0.1:4000/`上查看创世单元。
 
-## 发布BlackBytes
-
-```bash
- npm run blackbytes
-```
-
-运行成功后，可以在`http://127.0.0.1:4000/`上查看BlackBytes单元。
-
 
 ## 开启支付测试
 
