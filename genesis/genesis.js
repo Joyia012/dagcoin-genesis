@@ -15,7 +15,7 @@ const configPath = "../wallets/";
 
 
 const witness_budget = 1000000;
-const witness_budget_count = 8;
+const witness_budget_count = 3;
 
 const witnessConfigFile = configPath+"witness-config.json";
 const genesisConfigFile = configPath+"genesis-config.json";
@@ -63,7 +63,7 @@ function loadWalletConfig(onDone) {
     payee_address = wallet['address'];
     walletConfigData[wallet['address']] = wallet;
     for(let i = 0; i < witness_budget_count; ++i) {
-        arrOutputs.push({ address: wallet['address'], amount: witness_budget });
+       arrOutputs.push({ address: wallet['address'], amount: witness_budget });
     }
 
     // Read witness config file

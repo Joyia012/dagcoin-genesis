@@ -39,7 +39,7 @@ cp -f ../config/constants.js ../src/explorer/node_modules/core/constants.js
 
 cp -f ../config/constants.js ../genesis/node_modules/core/constants.js
 
-for i in {1..4}
+for i in {1..7}
 do
     echo "deploy witness$i"
     cp -a ../src/witness/ ../nodes/witness$i

@@ -41,7 +41,9 @@ function createPayment() {
 		{address: paying_address, amount: 0},      // the change
 		{address: payee_address, amount: 100}  // the receiver
 	];
+	console.log('>>', paying_address);
 	composer.composePaymentJoint([paying_address], arrOutputs, headlessWallet.signer, callbacks);
+ // process.exit();
 }
 
 eventBus.on('headless_wallet_ready', function() {

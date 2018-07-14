@@ -10,7 +10,7 @@ exports.storage = 'sqlite';
 exports.admin_email='witness';
 exports.from_email='witness';
 exports.WS_PROTOCOL = 'ws://';
-exports.hub = '127.0.0.1';
+exports.hub = '127.0.0.1:1180';
 
 exports.bServeAsHub = false;
 exports.bLight = false;

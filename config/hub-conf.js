@@ -8,7 +8,7 @@
 //exports.pushApiProjectNumber = 0;
 //exports.pushApiKey = '';
 
-exports.port = 80;
+exports.port = 1180;
 //exports.myUrl = 'wss://mydomain.com/bb';
 exports.bServeAsHub = true;
 //exports.bSaveJointJson = true;
@@ -23,10 +23,16 @@ exports.HEARTBEAT_TIMEOUT = 300*1000;
 exports.storage = 'sqlite';
 
 
-exports.initial_witnesses = [ '7WCFYM6GXDABMKSVY534FISSGKDZBXZX',
-  '7WMQK6ITRXH2Y4EO4TT3Y3IIL56URLCL',
-  'TKNE2A6BWAXNGFZWEHGKWCAQWLC6PZOJ',
-  'YFYIRO5HZ6LABJYVUU6U4S2DUSBSRTHR' ];
+exports.initial_witnesses = 
+[ 'DF35XKOVH3GKFWPI27NQXHMYFJCNE5FC',
+  'GUC5TXQD3IZO3MDD7FH7F2BXMBZEQ6HS',
+  'HZSN5FKFUE34SH6YY3S4HZGIHXH3XONC',
+  'NGSF3KE27KMZG2MXHHQ6VRFEWORJKMGY',
+  'OMYNGD74XMC4WN726IRERS62SQCZTZ4X',
+  'RHJTAPKD4GQBBZ3PEPXKKB43TW3OE2SB',
+  'XVEC6FGELFGNOWZTNZQ54MS7TNFIP5ZR' ]
+
+;
 
 
 

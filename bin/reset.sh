@@ -14,14 +14,14 @@ cd `dirname $0`
 
 pm2 delete all
 
-rm "$APPDIR"/byteball-hub/byteball*
-rm "$APPDIR"/byteball-explorer/byteball*
+rm "$APPDIR"/hub/byteball*
+rm "$APPDIR"/explorer/byteball*
 
 rm "$APPDIR"/wallet-genesis/byteball*
 rm "$APPDIR"/wallet-paying/byteball*
 rm "$APPDIR"/wallet-payee/byteball*
 
-for i in {1..4}
+for i in {1..7}
 do
     rm "$APPDIR"/wallet-witness$i/byteball*
 done

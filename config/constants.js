@@ -1,16 +1,16 @@
 /*jslint node: true */
 "use strict";
 
-exports.COUNT_WITNESSES = 4;
+exports.COUNT_WITNESSES = 7;
 exports.MAX_WITNESS_LIST_MUTATIONS = 1;
-exports.TOTAL_WHITEBYTES = 1e12;
+exports.TOTAL_WHITEBYTES = 1315e11;
 exports.MAJORITY_OF_WITNESSES = (exports.COUNT_WITNESSES%2===0) ? (exports.COUNT_WITNESSES/2+1) : Math.ceil(exports.COUNT_WITNESSES/2);
 exports.COUNT_MC_BALLS_FOR_PAID_WITNESSING = 100;
 
-exports.version = '1.0t';
+exports.version = '1.0';
 exports.alt = '1';
 
-exports.GENESIS_UNIT = 'NvDKs1DVhmqIZAkcUZDInvh7GjTlj8lOV/IjH71c1RE=';
+exports.GENESIS_UNIT = '9xttKU9S8CgvVLzTH0J+5KhUU5SRdw5rkoZ36AB/kWc=';
 
 exports.HASH_LENGTH = 44;
 exports.PUBKEY_LENGTH = 44;
@@ -29,14 +29,10 @@ exports.MAX_ATTESTORS_PER_ASSET = 64;
 exports.MAX_DATA_FEED_NAME_LENGTH = 64;
 exports.MAX_DATA_FEED_VALUE_LENGTH = 64;
 exports.MAX_AUTHENTIFIER_LENGTH = 4096;
-exports.MAX_CAP = 1e12;
+exports.MAX_CAP = 1315e11;
 exports.MAX_COMPLEXITY = 100;
 
 exports.MAX_PROFILE_FIELD_LENGTH = 50;
 exports.MAX_PROFILE_VALUE_LENGTH = 100;
 
-exports.TEXTCOIN_CLAIM_FEE = 548;
-exports.TEXTCOIN_ASSET_CLAIM_FEE = 750;
-exports.TEXTCOIN_ASSET_CLAIM_HEADER_FEE = 391;
-exports.TEXTCOIN_ASSET_CLAIM_MESSAGE_FEE = 209;
-exports.TEXTCOIN_ASSET_CLAIM_BASE_MSG_FEE = 158;
+

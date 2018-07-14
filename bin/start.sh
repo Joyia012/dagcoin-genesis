@@ -6,7 +6,7 @@ pm2 delete all
 
 pm2 start  ../nodes/hub/start.js --name hub
 
-for i in {1..4}
+for i in {1..7}
 do
     pm2 start ../nodes/witness$i/start.js --name witness$i
 done
